@@ -1,0 +1,62 @@
+<div class="container">
+    <div class="row" style=" margin-top: 50px; ">
+        <div class="col-4 col-md-3" style="margin-top: 12px;  background-color: rgb(163, 189, 236)">
+        <ul>
+            <li>
+                <i class="fa fa-home"></i><p>Home</p>
+            </li>
+            <li>
+                <i class="fa fa-calendar"></i> <p>Payroll</p><i class="fa fa-angle-down"></i>
+            </li>
+ 
+            <li>
+                <i class="fa fa-calendar"></i> <p>My Payslip</p>
+            </li>
+            <li>
+                <i class="fa fa-home"></i><p>My Loans</p>
+            </li>
+            <li>
+                <i class="fa fa-user"></i><p>My Profile</p>
+            </li>
+            <li>
+                <i class="fa fa-calendar"></i><p>Reports</p>
+            </li>
+            <li>
+                <i class="fa fa-cogs"></i><p>Settings</p>
+            </li>
+        </ul>
+        <div class="icon">
+            <i class="fa fa-twitter-square"></i>
+            <i class="fa fa-linkedin-square"></i>
+            <i class="fa fa-facebook-square"></i>
+        </div>
+        </div>
+        <div class="col-8 col-md-9 " style="text-align:left;width:500px;">
+ 
+
+                <table *ngIf="Users">
+                    <!-- ADD HEADERS -->
+                    <tr>
+                        <th>UserID</th>
+                        <th>Name</th>
+                            <th>hiringDate</th>
+                                <th>firstContractingSalary</th>
+                    </tr>
+            
+                    <!-- BIND ARRAY TO TABLE -->
+                    <tr *ngFor="let users of Users">
+                        <td>{{users.id}}</td>
+                        <td>{{users.department.name_FL}}</td>
+                            <td>{{users.hiringDate}}</td>
+                                <td>{{users.firstContractingSalary}}</td>
+                    </tr>
+                </table>
+             
+              
+        </div>
+    </div>
+</div>
+
+
+
+<!-- <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator> -->

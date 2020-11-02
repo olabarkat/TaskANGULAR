@@ -1,0 +1,44 @@
+ul li{
+    list-style: none;
+}
+ul li :hover{
+    color: white;
+   
+}
+ul li i{
+    margin-top: 4px;
+    margin-right: 10px;
+}
+li{
+    display: flex;
+}
+ul{
+    padding-left: 0px;
+    
+    padding-top: 55px;
+
+} 
+
+  table, th, td 
+{
+    margin: 10px 0;
+    /* background-color: rgb(163, 189, 236); */
+    border: solid 1px rgb(85, 145, 235);
+    padding: 2px 4px;
+    font: 15px Verdana;
+}
+th {
+    font-weight:bold;
+    padding: 10px;
+}
+.icon i{
+    font-size: 25px;
+    margin: 8px;
+   
+}
+@media(max-width:425px){
+
+.icon i{
+    display: block;
+}
+}
